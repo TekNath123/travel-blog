@@ -50,7 +50,7 @@ import Login from "../pages/auth/Login";
 import CountryDetails from "../pages/countries/[id]";
 
 const PrivateRoute = ({ children }) => {
-  return isLoggedIn() ? children : <Navigate to="/" />;
+  return isLoggedIn() ? children : <Navigate to="/login" />;
 };
 
 const wrapperStyle = {
